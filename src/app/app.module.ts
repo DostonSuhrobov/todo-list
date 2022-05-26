@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
